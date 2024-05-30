@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Syle/styles.css">
+    <link rel="stylesheet" href="../Syle/login_styles.css">
+    <title>會員登入 | 酉告COOL</title>
+
+</head>
+
+<body>
+  <!--Header -->
+  <header>
+    <div class="container">
+        <nav class="topall">
+
+            <button class="btn1" id="btn1" onclick="window.location.href='member.html'"
+                style="position: absolute; right: 10px; top: 10px ;">會員登入 / 註冊</button>
+
+            <a href="../View/index .html"><img class="logo" src="../image/logo.png" height="60px"></a>
+
+            <ul class="top">
+                <li>
+                    <a href="../View/top.html">上身▼</a>
+                    <ul class="top1">
+                        <li>
+                            <a href="#">T-shirt</a>
+                        </li>
+
+                        <li>
+                            <a href="#">長袖上衣</a>
+                        </li>
+
+                        <li>
+                            <a href="#">針織/毛衣</a>
+                        </li>
+
+                        <li>
+                            <a href="#">襯衫</a>
+                        </li>
+
+                        <li>
+                            <a href="#">外套/罩衫</a>
+                        </li>
+
+                        <li>
+                            <a href="#">背心/小可愛</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="../View/bottom.html">下身▼</a>
+                    <ul class="top1">
+                        <li>
+                            <a href="#">裙子</a>
+                        </li>
+
+                        <li>
+                            <a href="#">褲子</a>
+                        </li>
+
+                        <li>
+                            <a href="#">牛仔褲</a>
+                        </li>
+
+                        <li>
+                            <a href="#">西裝褲</a>
+                        </li>
+
+                        <li>
+                            <a href="#">短褲</a>
+                        </li>
+
+                        <li>
+                            <a href="#">長褲</a>
+                        </li>
+
+                        <li>
+                            <a href="#">內搭褲</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="../View/dress.html">洋裝▼</a>
+                    <ul class="top1">
+                        <li>
+                            <a href="#">長洋裝</a>
+                        </li>
+
+                        <li>
+                            <a href="#">短洋裝</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <!-- <li> <a href="#">外套</a></li> -->
+
+                <li>
+                    <a href="../View/acc.html">配件▼</a>
+                    <ul class="top1">
+                        <li>
+                            <a href="#">項鍊</a>
+                        </li>
+
+                        <li>
+                            <a href="#">墨鏡/眼鏡</a>
+                        </li>
+
+                        <li>
+                            <a href="#">襪子</a>
+                        </li>
+                    </ul>
+                </li>
+        </nav>
+    </div>
+</header>
+<!--Header -->
+
+    <!-- -----------------------------------------form box------------------------------------------------------ -->
+    <div class="form-box">
+        <!-- ----------------------------login form--------------------------------------------- -->
+        <div class="login-container" style="color: white;" id="login">
+            <div class="form-top">
+                <span>還不是會員嗎?<a href="#" onclick="register()">註冊</a></span>
+                <div class="header">Login</div>
+            </div>
+            <div class="input-two">
+                <div class="input-box">
+                    <input type="email" class="input-field" placeholder="E-mail">
+                    <img src="../image/email.png" width="15px">
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="密碼">
+                    <img src="../image/lock.png" width="15px">
+                </div>
+            </div>
+            <div>
+                <input type="text" class="input-field" placeholder="驗證碼">
+                <img class="verify" src="../image/person.png" width="15px">
+            </div>
+            <div>
+                <input type="text" value="1111-9999" id="randomNum" class="ver-pic" disabled="disabled">
+            </div>
+            <div><img class="ver-pic2" onclick="goRandom()" src="../image/refresh.png" width="5%"></div>
+
+
+            <div class="input-box">
+                <input type="submit" onclick="log()" class="submit1" value="Login | 會員登入">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="login-check">
+                    <label for="login-check">Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">忘記密碼 | 重設密碼</a></label>
+                </div>
+            </div>
+
+            <div style="text-align:center" class="two-dot">
+                <span id="logindot" class="dot" onclick="login()" style="background-color:rgb(59, 59, 59);"></span>
+                <span id="registerdot" class="dot" onclick="register()"></span>
+            </div>
+        </div>
+        <!-- ----------------------------registration form--------------------------------------------- -->
+        <div class="register-container" style="color: white;" id="register">
+            <div class="form-top">
+                <span>有帳戶了嗎?<a href="#" onclick="login()">登入</a></span>
+                <div class="header">Sign Up</div>
+            </div>
+            <div class="two-froms">
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="姓">
+                    <img src="../image/user.png" width="15px">
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="名">
+                    <img src="../image/user.png" width="15px">
+                </div>
+            </div>
+            <div class="input-two">
+                <div class="input-box">
+                    <input type="email" class="input-field" placeholder="E-mail">
+                    <img src="../image/email.png" width="15px">
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="密碼">
+                    <img src="../image/lock.png" width="15px">
+                </div>
+            </div>
+
+            <div class="input-box">
+                <input type="submit" onclick="reg()" class="submit" value="Register | 註冊">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="register-check">
+                    <label for="register-check">Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">查看隱私條款</a></label>
+                </div>
+            </div>
+
+            <div style="text-align:center" class="two-dot">
+                <span id="logindot" class="dot" onclick="login()"></span>
+                <span id="registerdot" class="dot" onclick="register()"
+                    style="background-color:rgb(59, 59, 59);"></span>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------------------form box------------------------------------------------------ -->
+
+  
+        <!--Footer-->
+        <footer>
+            <div>
+                <a href="#" class="pagetop">Top</a>
+                <a href=""><img src="../image/logo.png" height="55px"></a>
+                <nav class="endall">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <p style="font-size: 13px; margin: 0;">copyright &copy; 酉告COOL 版權所有. All rights
+                            reserved.2024</p>
+                        <ul class="end" style="list-style-type: none; padding: 0; margin: 0; padding-right: 40px;">
+                            <li id="li1"><a href="qa.html">常見問題</a></li>
+                            <li id="li1"><a href="#">廣告刊登</a></li>
+                            <li id="li1"><a href="#">關於我們</a></li>
+                            <li><a href="#">隱私權政策</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </footer>
+        <!--Footer-->
+
+
+    <script>
+
+        var initialRandomNumber;
+        var randomNumber;
+
+        var a = document.getElementById("logindot");
+        var b = document.getElementById("registerdot");
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+
+        function login() {
+            x.style.left = "25px";
+            y.style.right = "-560px";
+        }
+
+        function register() {
+            x.style.left = "-550px";
+            y.style.right = "35px";
+        }
+
+
+        //頁面載入時自動生成亂數
+        window.onload = function () {
+            initialRandomNumber = getRandomInt();
+            console.log(initialRandomNumber);
+            document.getElementById('randomNum').value = initialRandomNumber;
+        };
+
+        function getRandomInt() {
+            return Math.floor(Math.random() * (8889) + 1111);
+        }
+
+        function goRandom() {
+            randomNumber = getRandomInt();
+            console.log(randomNumber);
+            document.getElementById('randomNum').value = randomNumber;
+        }
+
+        function isValidEmail(email) {
+            //表達正確的電子郵件格式
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailPattern.test(email);
+        }
+
+        function log() {
+            // 獲取輸入字段的值
+            var email = document.querySelector('#login .input-two .input-box input[type="email"]').value;
+            var password = document.querySelector('#login .input-two .input-box input[type="password"]').value;
+            var verificationCode = document.querySelector('#login input[type="text"]').value;
+
+            // 驗證電子郵件是否為空
+            if (!email) {
+                alert('請填寫您的電子郵件');
+                return;
+            }
+            //驗證電子郵件格式是否正確
+            if (!isValidEmail(email)) {
+                alert('請填寫『格式正確』的電子郵件');
+                return;
+            }
+
+            // 驗證密碼是否為空
+            if (!password) {
+                alert('請填寫您的密碼');
+                return;
+            }
+            //驗證驗證碼是否為空
+            if (!verificationCode) {
+                alert('請填寫驗證碼');
+                return;
+            }
+
+            if (verificationCode != randomNumber) {
+                alert('驗證碼錯誤');
+                return;
+            }
+
+            else {
+                alert('歡迎回來');
+                window.location.href = 'index.html';
+            }
+        }
+
+        function reg() {
+            // 獲取輸入字段的值
+            var name = document.querySelector('#register .two-froms .input-box input[type="text"]').value;
+            var email = document.querySelector('#register .input-two .input-box input[type="email"]').value;
+            var password = document.querySelector('#register .input-two .input-box input[type="password"]').value;
+
+            // 驗證姓名欄位是否為空
+            if (!name) {
+                alert('請填寫您的姓名');
+                return;
+            }
+
+            // 驗證電子郵件是否為空
+            if (!email) {
+                alert('請填寫電子郵件');
+                return;
+            }
+
+            //驗證電子郵件格式是否正確
+            if (!isValidEmail(email)) {
+                alert('請填寫『格式正確』的電子郵件');
+                return;
+            }
+
+            // 驗證密碼是否為空
+            if (!password) {
+                alert('請填寫密碼');
+                return;
+            }
+
+            else {
+                alert('註冊成功!');
+                window.location.href = 'index.html';
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

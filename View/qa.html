@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Syle/styles.css">
+
+    <title>FAQ 常見問題 | 酉告COOL</title>
+
+    <style>
+        .acc img {
+            position: absolute;
+            right: 25px;
+            /* 調整 icon 與 button 的距離 */
+            width: 13px;
+        }
+
+        footer {
+            margin-top: 450px;
+        }
+
+
+        .container {
+            padding-top: 100px;
+            /* 添加一個頂部間距，以避免內容被 HEADER 覆蓋 */
+        }
+
+        /* Accordion設定 */
+        /* Style the buttons that are used to open and close the accordion panel */
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+            position: relative;
+        }
+
+        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+        .active,
+        .accordion:hover {
+            background-color: #ccc;
+        }
+
+        /* Style the accordion panel. Note: hidden by default */
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            display: none;
+            overflow: hidden;
+            font-size: small;
+        }
+
+        .acc {
+            margin-left: 10%;
+            margin-right: 10%;
+            color: #000000;
+        }
+
+        /* Accordion設定 */
+        h2 {
+            margin-left: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header -->
+    <header>
+        <div class="container">
+            <nav class="topall">
+
+                <button class="btn1" id="btn1" onclick="window.location.href='member.html'"
+                    style="position: absolute; right: 10px; top: 10px ;">會員登入 / 註冊</button>
+
+                <a href="../View/index .html"><img class="logo" src="../image/logo.png" height="60px"></a>
+
+                <ul class="top">
+                    <li>
+                        <a href="../View/top.html">上身▼</a>
+                        <ul class="top1">
+                            <li>
+                                <a href="#">T-shirt</a>
+                            </li>
+
+                            <li>
+                                <a href="#">長袖上衣</a>
+                            </li>
+
+                            <li>
+                                <a href="#">針織/毛衣</a>
+                            </li>
+
+                            <li>
+                                <a href="#">襯衫</a>
+                            </li>
+
+                            <li>
+                                <a href="#">外套/罩衫</a>
+                            </li>
+
+                            <li>
+                                <a href="#">背心/小可愛</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../View/bottom.html">下身▼</a>
+                        <ul class="top1">
+                            <li>
+                                <a href="#">裙子</a>
+                            </li>
+
+                            <li>
+                                <a href="#">褲子</a>
+                            </li>
+
+                            <li>
+                                <a href="#">牛仔褲</a>
+                            </li>
+
+                            <li>
+                                <a href="#">西裝褲</a>
+                            </li>
+
+                            <li>
+                                <a href="#">短褲</a>
+                            </li>
+
+                            <li>
+                                <a href="#">長褲</a>
+                            </li>
+
+                            <li>
+                                <a href="#">內搭褲</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../View/dress.html">洋裝▼</a>
+                        <ul class="top1">
+                            <li>
+                                <a href="#">長洋裝</a>
+                            </li>
+
+                            <li>
+                                <a href="#">短洋裝</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <!-- <li> <a href="#">外套</a></li> -->
+
+                    <li>
+                        <a href="../View/acc.html">配件▼</a>
+                        <ul class="top1">
+                            <li>
+                                <a href="#">項鍊</a>
+                            </li>
+
+                            <li>
+                                <a href="#">墨鏡/眼鏡</a>
+                            </li>
+
+                            <li>
+                                <a href="#">襪子</a>
+                            </li>
+                        </ul>
+                    </li>
+            </nav>
+        </div>
+    </header>
+    <!--Header -->
+
+    <div>
+        <h2 style="color: white;">FAQ 常見問題</h2>
+    </div>
+    <div class="acc">
+        <button class="accordion">
+            Q1. 該怎麼加入會員呢?<img src="../image/plus.png" id="icon"></button>
+
+        <div class="panel">
+            <p>請點選網頁右上方「加入會員」按鈕，填寫註冊電子郵件並經過驗證即可成為網路會員並訂購商品。</p>
+        </div>
+        <button class="accordion">
+            Q2. 忘記密碼怎麼辦? <img src="../image/plus.png" id="icon"></button>
+        <div class="panel">
+            <p>若若您忘記密碼，請點選「會員登入」後，並點選「忘記密碼」再輸入註冊的電子郵件，系統即會自動將您設定的密碼寄至您預設的Email信箱中，請您收取郵件確認即可。
+            </p>
+        </div>
+        <button class="accordion">
+            Q3. 商品都是現貨嗎? <img src="../image/plus.png" id="icon"></button>
+        <div class="panel">
+            <p>基本上可以直接加入購物車商品皆為現貨，【預購商品】會在選完顏色尺寸後顯示【預計到貨日期】哦。</p>
+        </div>
+
+        <button class="accordion">
+            Q4. 如何查詢目前訂單的處理情況?<img src="../image/plus.png" id="icon"></button>
+        <div class="panel">
+            <p>請先登入會員後點選「訂單查詢」，即可查詢該訂單的處理狀態。</p>
+        </div>
+
+        <button class="accordion">
+            Q5. 如何辦理退換貨?<img src="../image/plus.png" id="icon"></button>
+        <div class="panel">
+            <p>申請方式：
+                請透過官網「會員中心-->訂單查詢-->申請退貨」，取得退貨代碼(適用於全省的7-11，外島不適用) 並將商品完成「密封包裝」後，至鄰近的超商門市使用IBON操作，並將退貨交給櫃台辦理退貨並領取收據即可完成。
+            </p>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div>
+            <a href="#" class="pagetop">Top</a>
+            <a href=""><img src="../image/logo.png" height="55px"></a>
+            <nav class="endall">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <p style="font-size: 13px; margin: 0;">copyright &copy; 酉告COOL 版權所有. All rights
+                        reserved.2024</p>
+                    <ul class="end" style="list-style-type: none; padding: 0; margin: 0; padding-right: 40px;">
+                        <li id="li1"><a href="../View/qa.html">常見問題</a></li>
+                        <li id="li1"><a href="#">廣告刊登</a></li>
+                        <li id="li1"><a href="#">關於我們</a></li>
+                        <li><a href="#">隱私權政策</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
+    <!--Footer-->
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                    this.querySelector('#icon').src = "../image/plus.png";
+                } else {
+                    panel.style.display = "block";
+                    this.querySelector('#icon').src = "../image/line.png";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

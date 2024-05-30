@@ -1,0 +1,205 @@
+ /* 響應式 */
+ .event {
+    color: white;
+    text-align: center;
+    padding-bottom: 50px;
+    margin: 0;
+    margin-top: -80px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.event2 {
+    color: white;
+    text-align: center;
+    padding-bottom: 50px;
+    margin: 0;
+    margin-top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.event img,
+.event2 img {
+    width: 250px;
+}
+
+.main img {
+    width: 1250px;
+}
+
+@media(max-width: 1500px) {
+
+    .event img,
+    .event2 img {
+        width: 200px;
+    }
+
+    .event,
+    .event2 {
+        padding-bottom: 40px;
+    }
+
+    .main img {
+        width: 1100px;
+    }
+}
+
+@media(max-width:1050px) {
+
+    .event img,
+    .event2 img {
+        width: 150px;
+    }
+
+    .event,
+    .event2 {
+        padding-bottom: 30px;
+    }
+
+    .main img {
+        width: 990px;
+    }
+}
+
+@media(max-width: 700px) {
+
+    .event img,
+    .event2 img {
+        width: 130px;
+    }
+
+    .event,
+    .event2 {
+        padding-bottom: 20px;
+    }
+
+    .main img {
+        width: 700px;
+    }
+}
+
+/* 響應式 */
+
+
+
+.swiper {
+    z-index: 1;
+    /* 確保 Swiper 保持在標頭下方 */
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#swiper-button {
+    color: rgb(255, 255, 255);
+}
+
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 如果需要在垂直方向居中 */
+}
+
+.event a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+}
+
+.event a:hover {
+    color: #8b8b8b;
+    text-decoration: underline;
+}
+
+.endpro h4,
+.endpro h6 {
+    margin: 8px;
+    /* 將 h4 和 h6 元素的外邊距離設為0 */
+}
+
+
+/* -------  下方推薦區域 ------- */
+
+.event2 h2 {
+    margin: 2px;
+}
+
+.event2 a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+}
+
+.event2 a:hover {
+    color: #8b8b8b;
+    text-decoration: underline;
+}
+
+.event2 h2 {
+    margin: 2px;
+}
+
+/* -------  下方推薦區域 ------- */
+
+
+#line {
+    padding-bottom: 30px;
+}
+
+.container {
+    padding-top: 100px;
+    /* 添加一個頂部間距，以避免內容被 HEADER 覆蓋 */
+}
+
+a:hover img {
+    filter: alpha(Opacity=80);
+    -moz-opacity: 0.65;
+    opacity: 0.65;
+}
+
+.img01:hover {
+    content: url(../image/RECOMMEND/1-2.png);
+}
+
+.img02:hover {
+    content: url(../image/RECOMMEND/3-2.png);
+}
+
+.img04:hover {
+    content: url(../image/RECOMMEND/4-2.png);
+}
+
+.img05:hover {
+    content: url(../image/RECOMMEND/6-2.png);
+}
+
+.img06:hover {
+    content: url(../image/RECOMMEND/5-2.png);
+}
+
+.img07:hover {
+    content: url(../image/RECOMMEND/7-2.png);
+}
+
+.img09:hover {
+    content: url(../image/RECOMMEND/9-2.png);
+}
+
+.img10:hover {
+    content: url(../image/RECOMMEND/10-2.png);
+}
+
+.img11:hover {
+    content: url(../image/RECOMMEND/11-2.png);
+}
+
+.img12:hover {
+    content: url(../image/RECOMMEND/8-2.png);
+}

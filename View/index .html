@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>酉告COOL | 首頁</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../Syle/styles.css">
+    <link rel="stylesheet" href="../Syle/index_styles.css">
+
+    <style>
+       
+        
+    </style>
+
+</head>
+
+<body>
+
+    <!--Header -->
+    <header>
+        <div class="container">
+            <nav class="topall">
+
+                <button class="btn1" id="btn1" onclick="window.location.href='member.html'"
+                    style="position: absolute; right: 10px; top: 10px ;">會員登入 / 註冊</button>
+
+                <a href="../View/index .html"><img class="logo" src="../image/logo.png" height="60px"></a>
+
+                <ul class="top">
+                    <li>
+                        <a href="../View/top.html">上身▼</a>
+                        <ul class="top1">
+                            <li>
+                                <a href="#">T-shirt</a>
+                            </li>
+
+                            <li>
+                                <a href="#">長袖上衣</a>
+                            </li>
+
+                            <li>
+                                <a href="#">針織/毛衣</a>
+                            </li>
+
+                            <li>
+                                <a href="#">襯衫</a>
+                            </li>
+
+                            <li>
+                                <a href="#">外套/罩衫</a>
+                            </li>
+
+                            <li>
+                                <a href="#">背心/小可愛</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../View/bottom.html">下身▼</a>
+                        <ul class="top1">
+                            <li>
+                                <a href="#">裙子</a>
+                            </li>
+
+                            <li>
+                                <a href="#">褲子</a>
+                            </li>
+
+                            <li>
+                                <a href="#">牛仔褲</a>
+                            </li>
+
+                            <li>
+                                <a href="#">西裝褲</a>
+                            </li>
+
+                            <li>
+                                <a href="#">短褲</a>
+                            </li>
+
+                            <li>
+                                <a href="#">長褲</a>
+                            </li>
+
+                            <li>
+                                <a href="#">內搭褲</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../View/dress.html">洋裝▼</a>
+                        <ul class="top1">
+                            <li>
+                                <a href="#">長洋裝</a>
+                            </li>
+
+                            <li>
+                                <a href="#">短洋裝</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <!-- <li> <a href="#">外套</a></li> -->
+
+                    <li>
+                        <a href="../View/acc.html">配件▼</a>
+                        <ul class="top1">
+                            <li>
+                                <a href="#">項鍊</a>
+                            </li>
+
+                            <li>
+                                <a href="#">墨鏡/眼鏡</a>
+                            </li>
+
+                            <li>
+                                <a href="#">襪子</a>
+                            </li>
+                        </ul>
+                    </li>
+            </nav>
+        </div>
+    </header>
+    <!--Header -->
+
+
+    <!-- swiper内容 -->
+    <div class="swiper"> <!-- swiper class 會被 new Swiper('.swiper' 使用 -->
+        <div class="swiper-wrapper"> <!-- 讓Swiper知道要輪播的內容位置必須為 swiper-wrapper -->
+            <div class="swiper-slide"><a href=""><img src="../image/COOLtop1.png" height="300px"></div></a>
+            <div class="swiper-slide"><a href=""><img src="../image/COOLtop2.png" height="300px"></div></a>
+            <div class="swiper-slide"><a href=""><img src="../image/COOLtop3.png" height="300px"></div></a>
+        </div>
+
+        <div class="swiper-button-prev" id="swiper-button"></div>
+        <div class="swiper-button-next" id="swiper-button"></div>
+    </div>
+    <!-- swiper内容 -->
+
+
+
+    <!-- 彈跳式窗口内容 -->
+    <div id="discountPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()"><img src="../image/close.png" alt="Close"></span>
+            <img src="../image/DISCOUNT.jpg" alt="Discount Image" height="500px">
+        </div>
+    </div>
+    <!-- 彈跳式窗口内容 -->
+
+
+
+
+    <div class="container">
+
+        <!-- 上方特別企劃區域 -->
+        <div class="event">
+            <h2>-特別企劃-</h2>
+            <a href=""><img src="../image/event_1.png"></a>
+            <a href=""><img src="../image/event_2.png"></a>
+            <a href=""><img src="../image/event_3.png"></a>
+            <a href=""><img src="../image/event_4.png"></a>
+        </div>
+        <!-- 上方特別企劃區域 -->
+
+
+
+        <!-- 當月活動區域 -->
+        <div class="main">
+            <a href="prolist.html"><img src="../image/index_0.png"></a>
+            <a href=""><img src="../image/index_1.png"></a>
+            <a href=""><img src="../image/index_ 2.png"></a>
+        </div>
+        <!-- 當月活動區域 -->
+
+
+
+        <!-- 下方推薦區域 -->
+        <div class="event2">
+            <Table border="0" width="100%" id="line">
+                <tbody>
+                    <tr>
+                        <td width="42%">
+                            <hr align="left" color="white" size="1">
+                        </td>
+                        <td width="17%">
+                            <h2>BEST RECOMMEND</h2>
+                        </td>
+                        <td width="42%">
+                            <hr align="right" color="white" size="1">
+                        </td>
+                    </tr>
+                </tbody>
+
+            </Table>
+
+            <Table align="center" class="endpro">
+                <tr>
+                    <td>
+                        <a href=""><img class="img01" src="../image/RECOMMEND/1.png" width="250px"></a>
+                        <a href="">
+                            <h4>2WAY-渡假風長洋裝</h4>
+                        </a>
+                        <h6>$980</h6>
+                    </td>
+                    <td>
+                        <a href=""><img class="img02" src="../image/RECOMMEND/3.png" width="250px"></a>
+                        <a href="">
+                            <h4>辣妹吊帶皮裙</h4>
+                        </a>
+                        <h6>$680</h6>
+                    </td>
+                    <td>
+                        <a href=""><img class="img03" src="../image/RECOMMEND/2.png" width="250px"></a>
+                        <a href="">
+                            <h4>日常百搭牛仔裙</h4>
+                        </a>
+                        <h6>$880</h6>
+                    </td>
+                    <td>
+                        <a href=""><img class="img04" src="../image/RECOMMEND/4.png" width="250px"></a>
+                        <a href="">
+                            <h4>率性針織上衣</h4>
+                        </a>
+                        <h6>$580</h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href=""><img class="img05" src="../image/RECOMMEND/6.png" width="250px"></a>
+                        <a href="">
+                            <h4>雙邊口袋奶茶襯衫</h4>
+                        </a>
+                        <h6>$790</h6>
+                    </td>
+                    <td>
+                        <a href=""><img class="img06" src="../image/RECOMMEND/5.png" width="250px"></a>
+                        <a href="">
+                            <h4>牛仔高腰工裝褲</h4>
+                        </a>
+                        <h6>$980</h6>
+                    </td>
+                    <td>
+                        <a href=""><img class="img07" src="../image/RECOMMEND/7.png" width="250px"></a>
+                        <a href="">
+                            <h4>穿搭新世界雪紡裙</h4>
+                        </a>
+                        <h6>$580</h6>
+                    </td>
+                    <td>
+                        <a href=""><img class="img08" src="../image/RECOMMEND/12.png" width="250px"></a>
+                        <a href="">
+                            <h4>哥德文字風短T</h4>
+                        </a>
+                        <h6>$580</h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href=""><img class="img09" src="../image/RECOMMEND/9.png" width="250px"></a>
+                        <a href="">
+                            <h4>高腰開岔工裝裙</h4>
+                        </a>
+                        <h6>$790</h6>
+                    </td>
+                    <td>
+                        <a href=""><img class="img10" src="../image/RECOMMEND/10.png" width="250px"></a>
+                        <a href="">
+                            <h4>口袋多多工裝背心</h4>
+                        </a>
+                        <h6>$580</h6>
+                    </td>
+                    <td>
+                        <a href=""><img class="img11" src="../image/RECOMMEND/11.png" width="250px"></a>
+                        <a href="">
+                            <h4>短版斜肩袖套上衣</h4>
+                        </a>
+                        <h6>$580</h6>
+                    </td>
+                    <td>
+                        <a href=""><img class="img12" src="../image/RECOMMEND/8.png" width="250px"></a>
+                        <a href="">
+                            <h4>貓貓彈力上衣</h4>
+                        </a>
+                        <h6>$380</h6>
+                    </td>
+                </tr>
+            </Table>
+        </div>
+        <!-- 下方推薦區域 -->
+
+
+    </div>
+
+
+
+
+
+
+    <!--Footer-->
+    <footer>
+        <div>
+            <a href="#" class="pagetop">Top</a>
+            <a href=""><img src="../image/logo.png" height="55px"></a>
+            <nav class="endall">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <p style="font-size: 13px; margin: 0;">copyright &copy; 酉告COOL 版權所有. All rights
+                        reserved.2024</p>
+                    <ul class="end" style="list-style-type: none; padding: 0; margin: 0; padding-right: 40px;">
+                        <li id="li1"><a href="qa.html">常見問題</a></li>
+                        <li id="li1"><a href="#">廣告刊登</a></li>
+                        <li id="li1"><a href="#">關於我們</a></li>
+                        <li><a href="#">隱私權政策</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
+    <!--Footer-->
+
+
+
+    <!-- 彈跳式窗口與swiper JS -->
+
+    <script>
+        const swiper = new Swiper('.swiper', { // 創建一個輪播
+            autoplay: { // 自動輪播 swiper
+                delay: 2 * 1000, // 每兩秒切換下一張
+            },
+            loop: true, // 輪播結束後回到第一張繼續輪播
+            navigation: { // 前一張、下一張按鈕
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+
+        // 1秒後打開彈出窗口的函數
+        setTimeout(openPopup, 1000);
+
+        // 打開彈跳式窗口
+        function openPopup() {
+            document.getElementById('discountPopup').style.display = 'flex';
+        }
+
+        // 關閉彈跳式窗口
+        function closePopup() {
+            document.getElementById('discountPopup').style.display = 'none';
+        }
+    </script>
+    <!-- 彈跳式窗口與swiper JS -->
+
+</body>
+
+</html>
